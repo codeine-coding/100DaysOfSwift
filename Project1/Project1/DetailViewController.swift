@@ -10,11 +10,11 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    var selectedImageInfo: (String, String)? {
+    var selectedImageInfo: (imageString: String, pictureCountString: String)? {
         didSet {
             guard let imageInfo = selectedImageInfo else { fatalError() }
-            self.imageView.image = UIImage(named: imageInfo.0)
-            self.title = imageInfo.1
+            self.imageView.image = UIImage(named: imageInfo.imageString)
+            self.title = imageInfo.pictureCountString
         }
     }
     
