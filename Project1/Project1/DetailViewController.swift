@@ -10,14 +10,14 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    var selectedImage: String? {
+    var selectedImageInfo: (String, String)? {
         didSet {
-            guard let imageString = selectedImage else { fatalError() }
-            self.imageView.image = UIImage(named: imageString)
+            guard let imageInfo = selectedImageInfo else { fatalError() }
+            self.imageView.image = UIImage(named: imageInfo.0)
+            self.title = imageInfo.1
         }
     }
     
-    var navigationTitle: String?
     
     var imageView: UIImageView = {
         let imageView = UIImageView()
@@ -39,7 +39,6 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.largeTitleDisplayMode = .never
-        title = navigationTitle
         view.backgroundColor = .white
         view.addSubview(imageView)
         displayConstraints()

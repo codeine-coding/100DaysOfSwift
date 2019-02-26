@@ -50,8 +50,7 @@ class ViewController: UITableViewController {
         let detailViewController = DetailViewController()
         let selectedImage = pictures[indexPath.row]
         let pictureCount = "Picture \(indexPath.row + 1) of \(pictures.count)"
-        detailViewController.selectedImage = selectedImage
-        detailViewController.navigationTitle = pictureCount
+        detailViewController.selectedImageInfo = (selectedImage, pictureCount)
         navigationController?.pushViewController(detailViewController, animated: true)
     }
 
