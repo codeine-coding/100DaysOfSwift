@@ -1,2 +1,3 @@
 # 100DaysOfSwift
-100 Days of Swift by Hacking with Swift creating UI programmatically
+I will be uploading any challenges using Storyboards and implementing them here programatically.
+Or at least until the program teaches how to code UI programatically, lol. 
