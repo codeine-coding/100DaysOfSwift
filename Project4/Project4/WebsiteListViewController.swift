@@ -22,6 +22,11 @@ class WebsiteListViewController: UIViewController {
     override func loadView() {
         view = tableView
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = "List of Websites"
+    }
 
 }
 

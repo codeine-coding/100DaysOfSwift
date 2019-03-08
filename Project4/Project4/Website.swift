@@ -16,5 +16,6 @@ struct Website {
 var websites = [
     Website(url: "apple.com"),
     Website(url: "hackingwithswift.com"),
-    Website(url: "google.com")
+    Website(url: "google.com"),
+    Website(url: "yahoo.com"),
 ]
